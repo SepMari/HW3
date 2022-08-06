@@ -10,14 +10,16 @@ public class Main {
         }
 
         //Задание 2
-        int clientDeviceYear = 2017;
+        int clientDeviceYear = 2015;
 
         if (clientOS == 1 && clientDeviceYear > 2015) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == 0 && clientDeviceYear > 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear <= 2015) {
+                System.out.println("Установите версию приложения для Android по ссылке");
         } else {
-                System.out.println("Установите версию приложения по ссылке");
+                System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
         //Задание 3 високосным является каждый четвертый год, но не является каждый сотый.
